@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Compare Profile</title>
+     <script src="https://kit.fontawesome.com/8fbd9cad7a.js" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="../css/compare.css">
+     <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+     <nav>
+          <input type="checkbox" name="" id="check">
+          <label for="check" class="checkbtn">
+               <i class="fa-solid fa-bars"></i>
+          </label>
+          <label for="logo"><img src="../image/logo.png" alt=""></label>
+
+          <ul>
+               <li><a href="../index.html">Home</a></li>
+               <li><a class="active" href="compare.html">Compare Profile</a></li>
+               <li><a href="about.html">About Us</a></li>
+          </ul>
+     </nav>
+
+     <div id="container">
+
+          <form action="" id="form" onsubmit="return formsubmit()">
+               <input type="text" id="search" placeholder="Enter Github username">
+               <button type="submit" id="submit">Search</button>
+          </form>
+          <form action="" id="form1" onsubmit="return formsubmit1()">
+               <input type="text" id="search1" placeholder="Enter Github username">
+               <button type="submit" onsubmit="formsubmit1()" id="submit1">Search</button>
+          </form>
+     </div>
+     <div id="content">
+          <div id="main"></div>
+          <div id="main1"></div>
+     </div>
+</body>
+<script src="../app.js"></script>
+
+
+</html>

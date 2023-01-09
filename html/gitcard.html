@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="../css/style.css">
+     <style>
+          #link {
+               margin: 34vw;
+          }
+
+          img {
+               width: 495px;
+               border-radius: 0;
+          }
+     </style>
+</head>
+
+<body>
+     <nav>
+          <input type="checkbox" name="" id="check">
+          <label for="check" class="checkbtn">
+               <i class="fa-solid fa-bars"></i>
+          </label>
+          <label for="logo"><img src="../image/logo.png" alt=""></label>
+
+          <ul>
+               <li><a class="active" href="../index.html">Home</a></li>
+               <li><a href="compare.html">Compare Profile</a></li>
+
+               <li><a href="about.html">About Us</a></li>
+          </ul>
+     </nav>
+     <form action="" onsubmit="return getImage()">
+
+          <input type="text" id="input" placeholder="Enter Github username">
+          <button type="submit">View Card</button>
+     </form>
+     <div class="container">
+
+          <a id="link" href="" download=""><img id="image" src="" alt=""></a>
+
+     </div>
+</body>
+<script>
+     const getImage = () => {
+          const userinput = document.querySelector("#input");
+          if (userinput.value != "") {
+               var input = document.getElementById("input").value;
+               var link = document.getElementById("link");
+               var image = document.getElementById("image");
+               var url = "https://github-readme-stats.vercel.app/api?username=" + input + "&&show_icons=true&title_color=0BFB2B&icon_color=bb2acf&text_color=daf7dc&bg_color=090D5E"
+               link.href = url;
+               image.src = url;
+          }
+          return false;
+     };
+
+
+</script>
+
+</html>
