@@ -1,0 +1,45 @@
+* {
+     margin: 0;
+     padding: 0;
+}
+
+#container,
+#content {
+     display: flex;
+     justify-content: space-around;
+}
+
+#heading {
+     padding-top: 90px;
+}
+
+#main,
+#main1 {
+     margin: 0;
+     max-width: 40vw;
+}
+
+#main {
+     margin: 20px 10px;
+}
+
+#main1 {
+     background-color: #07396044;
+     box-sizing: border-box;
+     border-radius: 10px;
+
+     /* width: 50vw; */
+}
+
+#repos1 a {
+     display: inline-block;
+     border-radius: 20px;
+     background-color: aquamarine;
+     margin: 5px 10px;
+     padding: 5px;
+     max-width: 100%;
+}
+
+#repos1 {
+     padding-bottom: 10px;
+}
