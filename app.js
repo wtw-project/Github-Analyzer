@@ -9,6 +9,12 @@ const main = document.querySelector("#main");
 
 const formsubmit = () => {
   const searchBox = document.querySelector("#search");
+  
+  const rem = document.querySelectorAll('.c1');
+  rem.forEach(c1 => {
+    c1.remove();
+  });
+  
   if (searchBox.value != "") {
     getuser(searchBox.value);
   }
